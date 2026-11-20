@@ -8,6 +8,8 @@ mod geom;
 mod importar;
 mod ies;
 mod inventario;
+// shortcut: OIDN aún no está conectado a la app (plan 2026-11-06-quitarruido, Tarea C). Quitar el allow al integrarlo.
+#[allow(dead_code)]
 mod quitarruido;
 mod modelo;
 mod render_gl;

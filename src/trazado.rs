@@ -999,6 +999,7 @@ impl Acumulo {
 }
 
 /// Lo que se lee del trazado para quitar el ruido: RGB compacto (w·h·3) y la cobertura por píxel (w·h).
+#[allow(dead_code)] // shortcut: pendiente de la Tarea C del quitarruido.
 pub struct LecturaRuido {
     pub w: usize,
     pub h: usize,
@@ -1010,6 +1011,7 @@ pub struct LecturaRuido {
 
 /// Promedio RGBA de una capa de acumulación → RGB compacto: rgb / cobertura (alfa), 0 sin cobertura. Con `normal`,
 /// además se normaliza cada terna (las de longitud casi nula se quedan en cero).
+#[allow(dead_code)] // shortcut: pendiente de la Tarea C del quitarruido.
 fn rgba_a_rgb(rgba: &[f32], normal: bool) -> Vec<f32> {
     let mut rgb = Vec::with_capacity(rgba.len() / 4 * 3);
     for p in rgba.chunks_exact(4) {
@@ -1555,6 +1557,7 @@ impl Trazador {
 
     /// Lee el promedio actual (color, albedo y normal del primario) y lo deja en RGB compacto `w`×`h` para el
     /// quitarruido. Color y albedo = rgb / cobertura (0 sin cobertura); normal normalizada. None sin muestras.
+    #[allow(dead_code)] // shortcut: pendiente de la Tarea C del quitarruido.
     pub fn leer_para_quitar_ruido(&self, gl: &glow::Context) -> Option<LecturaRuido> {
         let a = self.acumulo.as_ref()?;
         if self.muestras == 0 {
@@ -1586,6 +1589,7 @@ impl Trazador {
     /// Sube el resultado limpio (RGB compacto `w`×`h`, radiancia sin exposición) y lo muestra `mostrar` hasta el
     /// próximo reinicio. `cobertura` (w·h, la de la lectura) se vuelve a aplicar como en la acumulación (rgb·a, a):
     /// sin ella, el fondo alrededor de la sala saldría negro opaco.
+    #[allow(dead_code)] // shortcut: pendiente de la Tarea C del quitarruido.
     pub fn subir_limpia(&mut self, gl: &glow::Context, w: usize, h: usize, rgb: &[f32], cobertura: &[f32]) -> Result<(), String> {
         if rgb.len() != w * h * 3 || cobertura.len() != w * h {
             return Err(format!("Resultado limpio de {} valores; se esperaban {}", rgb.len(), w * h * 3));

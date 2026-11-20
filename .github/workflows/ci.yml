@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pruebas:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain GNU (la misma que en desarrollo)
+        run: |
+          rustup toolchain install stable-x86_64-pc-windows-gnu --profile minimal
+          rustup default stable-x86_64-pc-windows-gnu
+      - uses: Swatinem/rust-cache@v2
+      - name: Pruebas
+        run: cargo test --locked
+      - name: Compilar sin avisos
+        run: cargo build --locked
+        env:
+          RUSTFLAGS: -D warnings

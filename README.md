@@ -6,6 +6,8 @@
 
 Coloca focos en los carriles del techo, conéctalos a sus tomas y mira cómo queda la luz antes de subir a la escalera.
 
+[![CI](https://github.com/habiddd/sala-luces/actions/workflows/ci.yml/badge.svg)](https://github.com/habiddd/sala-luces/actions/workflows/ci.yml)
+[![Licencia MIT](https://img.shields.io/badge/licencia-MIT-green)](LICENSE)
 ![Rust](https://img.shields.io/badge/Rust-2024-b7410e?logo=rust&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?logo=windows&logoColor=white)
 ![OpenGL](https://img.shields.io/badge/OpenGL-3.3-5586a4?logo=opengl&logoColor=white)
@@ -70,7 +72,6 @@ Todo lo que hay en la sala se puede mover arrastrando en la vista 3D o escribien
 
 - Unidades físicas: inverso del cuadrado, temperatura de color de cuerpo negro, exposición EV100 y tonemapping ACES.
 - Botón **Haz** para ver el cono de cada luz como si hubiera humo en la sala.
-- Quitarruido opcional con **Intel Open Image Denoise** para el modo Fotorrealista.
 - Con la ventana en reposo el consumo de CPU es prácticamente nulo.
 
 ## Descargar y usar
@@ -89,10 +90,6 @@ Requisitos: Windows 10 u 11 y una tarjeta gráfica con **OpenGL 3.3**. Con OpenG
 | Girar la cámara | Botón derecho + arrastrar |
 | Zoom | Rueda del ratón |
 
-### Quitarruido (opcional)
-
-Descarga [Intel Open Image Denoise 2.x](https://github.com/RenderKit/oidn/releases) para Windows y copia las DLL de la carpeta `bin` (`OpenImageDenoise.dll`, `OpenImageDenoise_core.dll`, `OpenImageDenoise_device_*.dll` y `tbb12.dll`) junto al `.exe` o en `%APPDATA%\SalaLuces\oidn\`. Si no están, la app funciona igual y la opción aparece como no disponible.
-
 ### Dónde se guardan los datos
 
 Los montajes se guardan donde tú elijas (`.json`). La configuración, el inventario, los modelos importados, los presets de pared y los perfiles IES van en `%APPDATA%\SalaLuces\`.
@@ -102,7 +99,7 @@ Los montajes se guardan donde tú elijas (`.json`). La configuración, el invent
 Hace falta [Rust](https://rustup.rs/) estable. El proyecto se desarrolla con el toolchain GNU (`stable-x86_64-pc-windows-gnu`), que no necesita Visual Studio; MSVC también debería funcionar.
 
 ```powershell
-git clone https://github.com/<tu-usuario>/sala-luces.git
+git clone https://github.com/habiddd/sala-luces.git
 cd sala-luces
 cargo build --release
 .\target\release\sala-luces.exe
@@ -136,4 +133,17 @@ docs/superpowers/   especificaciones y planes de cada función
 
 ## Tecnología
 
-[Rust](https://www.rust-lang.org/) · [egui / eframe](https://github.com/emilk/egui) con el renderizador glow (OpenGL) · shaders GLSL propios · [serde](https://serde.rs/) · [gltf](https://crates.io/crates/gltf) · [tobj](https://crates.io/crates/tobj) · [rfd](https://crates.io/crates/rfd) · [Intel OIDN](https://www.openimagedenoise.org/) (opcional)
+[Rust](https://www.rust-lang.org/) · [egui / eframe](https://github.com/emilk/egui) con el renderizador glow (OpenGL) · shaders GLSL propios · [serde](https://serde.rs/) · [gltf](https://crates.io/crates/gltf) · [tobj](https://crates.io/crates/tobj) · [rfd](https://crates.io/crates/rfd)
+
+## Hoja de ruta
+
+- **Quitarruido con [Intel Open Image Denoise](https://www.openimagedenoise.org/)** para el modo Fotorrealista: imagen limpia con decenas de muestras en vez de cientos. El módulo está escrito y probado; falta conectarlo a la interfaz.
+- Pruebas en GPUs NVIDIA e Intel (hasta ahora solo se ha probado en AMD).
+
+## Contribuir
+
+Las ideas, los reportes de errores y los *pull requests* son bienvenidos. Antes de empezar, lee [CONTRIBUTING.md](CONTRIBUTING.md): explica cómo compilar, cómo comprobar los cambios de render (las pruebas no ejecutan los shaders) y qué decisiones de diseño conviene mantener.
+
+## Licencia
+
+[MIT](LICENSE): puedes usar, modificar y distribuir el código libremente, siempre que mantengas el aviso de copyright.

@@ -2,6 +2,13 @@
 name = "sala-luces"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.85"
+description = "Planifica y simula la iluminación de una sala de grabación en 3D"
+license = "MIT"
+repository = "https://github.com/habiddd/sala-luces"
+readme = "README.md"
+keywords = ["iluminacion", "fotometria", "trazado-de-rayos", "egui", "opengl"]
+categories = ["graphics", "rendering", "simulation"]
 
 [dependencies]
 eframe = { version = "0.37.0", default-features = false, features = ["glow", "default_fonts", "clipboard"] }

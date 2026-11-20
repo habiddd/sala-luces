@@ -1,0 +1,29 @@
+name: Release
+
+# Se lanza al subir una etiqueta de versión: git tag v0.1.0 && git push origin v0.1.0
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain GNU
+        run: |
+          rustup toolchain install stable-x86_64-pc-windows-gnu --profile minimal
+          rustup default stable-x86_64-pc-windows-gnu
+      - uses: Swatinem/rust-cache@v2
+      - name: Pruebas
+        run: cargo test --locked
+      - name: Compilar release
+        run: cargo build --release --locked
+      - name: Publicar en Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          files: target/release/sala-luces.exe
+          generate_release_notes: true
