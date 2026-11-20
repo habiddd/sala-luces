@@ -1,0 +1,10 @@
+/target
+
+# Copia temporal suelta de un archivo fuente
+/TEMP
+
+# Editores y sistema
+.vscode/
+.idea/
+*.swp
+Thumbs.db
