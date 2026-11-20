@@ -1,0 +1,591 @@
+{
+  "sala": {
+    "ancho": 15.0,
+    "largo": 10.0,
+    "alto_techo": 4.0,
+    "altura_carriles": 3.8,
+    "paredes": [
+      {
+        "color": [
+          0,
+          177,
+          64
+        ],
+        "reflexion": 0.32
+      },
+      {
+        "color": [
+          0,
+          177,
+          64
+        ],
+        "reflexion": 0.32
+      },
+      {
+        "color": [
+          0,
+          177,
+          64
+        ],
+        "reflexion": 0.32
+      },
+      {
+        "color": [
+          0,
+          177,
+          64
+        ],
+        "reflexion": 0.32
+      }
+    ],
+    "suelo": {
+      "color": [
+        0,
+        177,
+        64
+      ],
+      "reflexion": 0.32
+    },
+    "techo": {
+      "color": [
+        28,
+        28,
+        28
+      ],
+      "reflexion": 0.05
+    }
+  },
+  "carriles": [
+    {
+      "id": "C2",
+      "x": 4.5050335
+    },
+    {
+      "id": "C1",
+      "x": 1.8751125
+    },
+    {
+      "id": "C3",
+      "x": 4.89
+    },
+    {
+      "id": "C4",
+      "x": 7.164212
+    },
+    {
+      "id": "C5",
+      "x": 7.6752386
+    },
+    {
+      "id": "C6",
+      "x": 9.789849
+    },
+    {
+      "id": "C7",
+      "x": 11.625538
+    }
+  ],
+  "tomas": [
+    {
+      "codigo": "T-14",
+      "pared": "Sur",
+      "pos": 2.6129208,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-11",
+      "pared": "Sur",
+      "pos": 2.9071531,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-21",
+      "pared": "Sur",
+      "pos": 3.099397,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-28",
+      "pared": "Sur",
+      "pos": 3.81,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-05",
+      "pared": "Sur",
+      "pos": 5.5360518,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-28_1",
+      "pared": "Sur",
+      "pos": 3.99,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-29",
+      "pared": "Sur",
+      "pos": 5.88,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-03",
+      "pared": "Sur",
+      "pos": 6.3015695,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-25",
+      "pared": "Sur",
+      "pos": 6.4872355,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-01",
+      "pared": "Sur",
+      "pos": 8.650903,
+      "nivel": "Carriles"
+    },
+    {
+      "codigo": "T-02",
+      "pared": "Sur",
+      "pos": 8.821925,
+      "nivel": "Carriles"
+    }
+  ],
+  "luces": [
+    {
+      "codigo": "11434700",
+      "marca": "Fluotec",
+      "modelo": "VineLight 120 LT",
+      "carril": "C1",
+      "z": 5.0,
+      "toma": "T-14",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 85.0,
+        "inclinacion": -77.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11484200",
+      "marca": "Fluotec",
+      "modelo": "",
+      "carril": "C2",
+      "z": 8.188261,
+      "toma": "T-11",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11484100",
+      "marca": "",
+      "modelo": "",
+      "carril": "C3",
+      "z": 5.0,
+      "toma": "T-28",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11484300",
+      "marca": "",
+      "modelo": "",
+      "carril": "C2",
+      "z": 2.2571807,
+      "toma": "T-21",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11484500",
+      "marca": "",
+      "modelo": "",
+      "carril": "C4",
+      "z": 8.265678,
+      "toma": "T-05",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 230.0,
+        "inclinacion": -33.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11484600",
+      "marca": "",
+      "modelo": "",
+      "carril": "C4",
+      "z": 1.9238011,
+      "toma": "T-29",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11484400",
+      "marca": "",
+      "modelo": "",
+      "carril": "C4",
+      "z": 5.0,
+      "toma": "T-28_1",
+      "specs": {
+        "tipo": "FluotecCineLight120Lt",
+        "potencia_w": 213.0,
+        "lux_1m": 13000.0,
+        "apertura_min": 44.0,
+        "apertura_max": 44.0,
+        "cct_min": 2700.0,
+        "cct_max": 6600.0,
+        "cri": 90.0,
+        "rgb": false,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 44.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11663200",
+      "marca": "",
+      "modelo": "",
+      "carril": "C5",
+      "z": 6.7912602,
+      "toma": "T-03",
+      "specs": {
+        "tipo": "SilverStarFrezno250Hex",
+        "potencia_w": 250.0,
+        "lux_1m": 83200.0,
+        "apertura_min": 10.0,
+        "apertura_max": 55.0,
+        "cct_min": 1800.0,
+        "cct_max": 10000.0,
+        "cri": 95.0,
+        "rgb": true,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 10.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11663100",
+      "marca": "",
+      "modelo": "",
+      "carril": "C5",
+      "z": 3.2045097,
+      "toma": "T-25",
+      "specs": {
+        "tipo": "SilverStarFrezno250Hex",
+        "potencia_w": 250.0,
+        "lux_1m": 83200.0,
+        "apertura_min": 10.0,
+        "apertura_max": 55.0,
+        "cct_min": 1800.0,
+        "cct_max": 10000.0,
+        "cri": 95.0,
+        "rgb": true,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 10.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11663300",
+      "marca": "",
+      "modelo": "",
+      "carril": "C6",
+      "z": 8.329483,
+      "toma": "T-01",
+      "specs": {
+        "tipo": "SilverStarFrezno250Hex",
+        "potencia_w": 250.0,
+        "lux_1m": 83200.0,
+        "apertura_min": 10.0,
+        "apertura_max": 55.0,
+        "cct_min": 1800.0,
+        "cct_max": 10000.0,
+        "cri": 95.0,
+        "rgb": true,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 10.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11662900",
+      "marca": "",
+      "modelo": "",
+      "carril": "C6",
+      "z": 5.141607,
+      "toma": "T-02",
+      "specs": {
+        "tipo": "SilverStarFrezno250Hex",
+        "potencia_w": 250.0,
+        "lux_1m": 83200.0,
+        "apertura_min": 10.0,
+        "apertura_max": 55.0,
+        "cct_min": 1800.0,
+        "cct_max": 10000.0,
+        "cri": 95.0,
+        "rgb": true,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 10.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    },
+    {
+      "codigo": "11663000",
+      "marca": "",
+      "modelo": "",
+      "carril": "C6",
+      "z": 2.4745939,
+      "toma": null,
+      "specs": {
+        "tipo": "SilverStarFrezno250Hex",
+        "potencia_w": 250.0,
+        "lux_1m": 83200.0,
+        "apertura_min": 10.0,
+        "apertura_max": 55.0,
+        "cct_min": 1800.0,
+        "cct_max": 10000.0,
+        "cri": 95.0,
+        "rgb": true,
+        "ies": null
+      },
+      "ajustes": {
+        "encendida": true,
+        "dimmer": 1.0,
+        "apertura": 10.0,
+        "cct": 5600.0,
+        "giro": 0.0,
+        "inclinacion": -90.0,
+        "tono": 0.0,
+        "saturacion": 0.0
+      }
+    }
+  ],
+  "luces_piso": [],
+  "objetos": [
+    {
+      "nombre": "Mesa 1",
+      "tipo": "Mesa",
+      "x": 2.700449,
+      "z": 5.4020824,
+      "rot": 0.0,
+      "ancho": 1.2,
+      "fondo": 0.7,
+      "alto": 0.75,
+      "marca": "",
+      "modelo": "",
+      "categoria": "Mesas",
+      "malla": null,
+      "piel": null
+    },
+    {
+      "nombre": "Silla 1",
+      "tipo": "Silla",
+      "x": 1.7056835,
+      "z": 5.2786837,
+      "rot": 180.0,
+      "ancho": 0.45,
+      "fondo": 0.45,
+      "alto": 0.9,
+      "marca": "",
+      "modelo": "",
+      "categoria": "Sillas",
+      "malla": null,
+      "piel": null
+    },
+    {
+      "nombre": "Maniquí 1",
+      "tipo": "Maniqui",
+      "x": 3.6924896,
+      "z": 5.3774004,
+      "rot": 0.0,
+      "ancho": 0.5,
+      "fondo": 0.3,
+      "alto": 1.75,
+      "marca": "",
+      "modelo": "",
+      "categoria": "Maniquíes",
+      "malla": null,
+      "piel": [
+        138,
+        98,
+        74
+      ]
+    }
+  ],
+  "modelos": {},
+  "acabados": {},
+  "fotometrias": {},
+  "camaras": [
+    {
+      "nombre": "CAM1",
+      "x": 2.713128,
+      "altura": 1.6,
+      "z": 8.657217,
+      "giro": 155.90308,
+      "inclinacion": -5.0,
+      "focal_mm": 12.0,
+      "sensor_ancho_mm": 36.0,
+      "aspecto": 1.7777778,
+      "iso": 800.0,
+      "diafragma": 2.8,
+      "obturacion": 0.016666668,
+      "balance_k": 6100.0,
+      "foco_m": 2.73
+    }
+  ]
+}
